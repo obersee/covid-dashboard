@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        // JS 파일을 TS에서 인식해서 사용하겠다
+        // 프로젝트 내에 JS까지 TS가 검증하겠다
+        "allowJs": true,
+        "target": "ES5",
+        // TS의 결과물이 어디에 들어갈 것인가
+        "outDir": "./dist",
+        "moduleResolution": "Node", // Promise를 인식시키기 위해
+        "lib": ["ES2015", "DOM", "DOM.Iterable"],
+        "noImplicitAny": true,
+        "typeRoots": ["./node_modules/@types", "types"],
+        "strict": true
+    },
+    "include": ["./src/**/*"] // src 폴더 아래에만 컴파일 하겠다
+}
